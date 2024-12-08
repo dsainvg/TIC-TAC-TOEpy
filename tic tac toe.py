@@ -41,6 +41,10 @@ def check(num,mat,oo):
         for i in range(3):
             a*=mat[i][i]
         if a==oo:return 1
+        a=1
+        for i in range(3):
+            a*=mat[i][2-i]
+        if a==oo:return 1
     return 0
 
   
